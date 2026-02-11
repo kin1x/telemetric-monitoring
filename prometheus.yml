@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: 'bp-backend'
+    static_configs:
+      - targets: ['bp-backend:4200']
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['prom-pg-exporter:9187']
+  - job_name: 'node'
+    static_configs:
+      - targets: ['prom-node-exporter:9100']

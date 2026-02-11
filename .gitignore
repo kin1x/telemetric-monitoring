@@ -1,0 +1,81 @@
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+yarn.lock
+
+# === Build output ===
+dist/
+build/
+.bundle/
+.cache/
+.nest-cli.cache/
+.build_cache/
+
+# === Environment variables ===
+.env
+.env.*.local
+.local.env
+*.local
+!.env.example
+
+# === Logs ===
+logs/
+*.log
+*.pid
+*.pid.lock
+*.seed
+
+# === Runtime reports ===
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Editor configs ===
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-snippets
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# === Test coverage & outputs ===
+coverage/
+.nyc_output/
+test-results/
+test-output/
+.turbo/
+
+# === Docker ===
+docker-compose.override.yml
+*.pid
+docker-volume/
+
+# === Databases ===
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+*.db
+/database/
+
+# === Python venv (если используется) ===
+venv/
+__pycache__/
+
+# === Prometheus & Grafana ===
+prometheus-data/
+prometheus.db
+grafana_data/
